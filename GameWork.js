@@ -113,6 +113,10 @@ function create ()
     this.physics.add.overlap(player, stars, collectStar, null, this);
 
     this.physics.add.collider(player, bombs, hitBomb, null, this);
+    player.setVelocityX(-160);
+
+
+
 }
 
 function update ()
